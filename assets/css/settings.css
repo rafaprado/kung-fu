@@ -1,0 +1,37 @@
+:root {
+    --background: #121214;
+    --black: #09090a;
+    --white: #FFF;
+    --primary: #FF7A29;
+    --primary-hover: #c96120;
+    --primary-outline-hover: #ff7b2934;
+    --gray: #E1E1E6;
+    --suport: #737380;
+    --text: #A8A8B3;
+    --shape: #202024;
+    --shape-dark: #3C3C42;
+    --shape-hover: #29292E;
+    --border: 1px solid #29292E;
+
+    --transition: all .2s ease;
+
+    --font-1: 16px;
+    --font-2: 18px;
+    --font-3: 24px;
+    --font-4: 32px;
+    --font-5: 48px;
+    --font-6: 56px;
+
+    --spacing-1: 8px;
+    --spacing-2: 10px;
+    --spacing-3: 16px;
+    --spacing-4: 24px;
+    --spacing-5: 28px;
+    --spacing-6: 32px;
+    --spacing-7: 40px;
+    --spacing-8: 52px;
+    --spacing-9: 80px;
+    --spacing-10: 122px;
+
+    --radius: 4px;
+}

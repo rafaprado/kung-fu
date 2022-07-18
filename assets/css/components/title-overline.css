@@ -1,0 +1,5 @@
+.title-overline {
+    font-size: var(--font-1);
+    line-height: 26px;
+    color: var(--primary);
+}

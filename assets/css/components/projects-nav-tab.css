@@ -1,0 +1,136 @@
+.tablist {
+    position: relative;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.tablist::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 1px;
+    width: 660px;
+    height: 1px;
+    background: var(--shape-hover);
+}
+
+.tablist {
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+}
+
+.tablist__button {
+    padding: 16px;
+    cursor: pointer;
+    background: transparent;
+    border: unset;
+    color: var(--text);
+    font-size: var(--font-2);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-3);
+    transition: var(--transition);
+    outline: none;
+    opacity: .4;
+}
+
+.tablist__button:focus-visible:not(.tablist__button--active) {
+    opacity: .8;
+}
+
+.tablist__button--active {
+    opacity: 1;
+}
+
+.tablist__button svg {
+    pointer-events: none;
+    height: 40px;
+}
+
+.tablist__button span {
+    pointer-events: none;
+}
+
+.tablist__button + .tablist__button{
+    margin-left: var(--spacing-4);
+}
+
+.tabpanel {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-content {
+    max-width: 556px;
+    width: 100%;
+    padding-top: var(--spacing-7);
+    padding-right: var(--spacing-3);
+}
+
+.project-title {
+    font-size: var(--font-4);
+    font-weight: 600;
+    color: var(--gray);
+    line-height: 36px;
+    max-width: 445px;
+}
+
+.project-description {
+    margin-top: var(--spacing-4);
+    color: var(--text);
+    line-height: 26px;
+    max-width: 528px;
+}
+
+.project-image {
+    border-radius: var(--radius);
+    filter: grayscale(1);
+    transition: .8s filter ease-in;
+    width: 100%;
+}
+
+.project-image:hover {
+    filter: grayscale(0);
+}
+
+@media screen and (min-width: 320px) {
+    .tabpanel {
+        flex-direction: column;
+    }
+
+    .project-title {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .project-image  {
+        max-width: 303px;
+        width: unset;
+        max-height: 158px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .tabpanel {
+        flex-direction: row;
+    }
+
+    .tablist::after {
+        width: 100%;
+    }
+}
+
+
+@media screen and (min-width: 998px) {
+    .project-image {
+        max-width: 516px;
+        max-height: 340px;
+    }
+
+    .tablist__button:hover:not(.tablist__button--active) {
+        opacity: .8;
+    }
+}

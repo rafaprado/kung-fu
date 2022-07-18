@@ -1,0 +1,9 @@
+.image {
+    filter: grayscale(1);
+    transition: .8s filter ease-in;
+    border-radius: var(--radius);
+}
+
+.image:hover {
+    filter: grayscale(0);
+}

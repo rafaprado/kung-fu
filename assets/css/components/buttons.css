@@ -1,0 +1,40 @@
+.btn {
+    padding: 15px 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+    text-transform: uppercase;
+    border-radius: var(--radius);
+    text-decoration: none;
+    width: fit-content;
+    outline: none;
+}
+
+.btn--primary {
+    background-color: var(--primary);
+    color: var(--white);
+    font-weight: 600;
+}
+
+.btn--primary:hover,
+.btn--primary:focus {
+    background-color: var(--primary-hover);
+}
+
+.btn--outline-primary {
+    color: var(--white);
+    border: 1px solid var(--primary);
+    font-weight: 600;
+}
+
+.btn--outline-primary:hover,
+.btn--outline-primary:focus {
+    background-color: var(--primary-outline-hover);
+}
+
+@media screen and (min-width: 320px){
+    .btn {
+        font-size: 14px;
+    }
+}

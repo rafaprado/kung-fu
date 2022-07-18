@@ -1,0 +1,23 @@
+.flex {
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+}
+
+.align-items-center {
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    align-items: center;
+}
+
+.justify-content-center {
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    justify-content: center;
+}
+
+.justify-content-between {
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+}

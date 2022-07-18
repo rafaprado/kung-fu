@@ -1,0 +1,13 @@
+::-webkit-scrollbar {
+    width: 6px;
+    height: 0;
+    scrollbar-width: 6px;
+}
+
+::-webkit-scrollbar, ::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--shape-dark);
+}
